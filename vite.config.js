@@ -4,8 +4,12 @@ import tailwindcss from "@tailwindcss/vite";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
+
+
+
 // https://vite.dev/config/
 export default defineConfig({
+   base: "/portfolio-web/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
